@@ -1,0 +1,37 @@
+.fakeout__brand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fakeout__brand div {
+    flex: 1;
+    max-width: 150px;
+    min-width: 120px;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fakeout__brand div img {
+    width: 100%;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: .1s ease-in;
+}
+
+.fakeout__brand div img:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+    .fakeout__brand {
+        justify-content: center;
+    }
+
+    .fakeout__brand div {
+        margin: 1.5rem;
+    }
+}

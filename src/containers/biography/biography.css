@@ -1,0 +1,96 @@
+.fakeout__biography {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    background: var(--color-footer);
+    background: radial-gradient(circle at 30% -100%, #1D297C 25%, rgba(29, 41, 124, 1) 85%, rgba(22, 83, 224, 1) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+}
+
+.fakeout__biography-feature {
+    display: flex;
+}
+
+.fakeout__biography-feature .fakeout__biography__feature {
+    margin: 0;
+}
+
+.fakeout__biography-feature .fakeout__biography__feature-text {
+    max-width: 800px;
+}
+
+.fakeout__biography-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0 2rem;
+}
+
+.fakeout__biography-heading h1 {
+    font-size: 34px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    line-height: 45px;
+    max-width: 510px;
+}
+
+.fakeout__biography-heading p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-subtext1);
+    cursor: pointer;
+}
+
+.fakeout__biography-heading p:hover {
+    text-decoration: underline;
+}
+
+.fakeout__biography-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+/* Customizing feature component as per needs */
+.fakeout__biography-container .fakeout__features-container__feature {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+
+/* Customizing feature component as per needs */
+.fakeout__biography-container .fakeout__features-container_feature-text {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .fakeout__biography-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    .fakeout__biography-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .fakeout__biography-feature .fakeout__features-container__feature {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .fakeout__biography-container .fakeout__features-container__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}
